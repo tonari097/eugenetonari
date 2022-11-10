@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./stylesheets/demo.css">
+<link rel="stylesheet" href="./stylesheets/myown.css">
+<!-- <link rel="stylesheet" href="./stylesheets/active.css"> -->
+</head>
+<body>
+
+<!-- Unhide this! -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Problem Statement </a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+
+
+
+<!-- New week stuff  -->
+
+
+
+
+
+
+
+<!-- First component is ScrollReveal JS -->
+<!-- Last Parallax: change the text and the image :D-->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <!-- For this activity, the data is in demo.css, edit the properties of bgimg-2 and make this transition your own -->
+      <span class="w3-xxlarge w3-text-white w3-wide"> DA week 3</span>
+    </div>
+  </div>
+
+
+
+<!-- Second Parallax Image for usable divisions -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide slideup">Animation with ScrollReveal <div></div></span>
+      <p class="w3-text-white w3-center slideup"> Building on Week 2</p>
+    </div>
+</div>
+
+
+  
+<!-- Intro exmaple -->
+<div class="w3-container w3-content w3-padding-64" id="about">
+  <h2 class="w3-center slideleft">How to implement animations</h2>
+      <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter slideup">
+      <i class="fa fa-file-code-o w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Add Scripts</p>
+      <p>Create a Script folder and add the script.js</p>
+    </div>
+    <div class="w3-quarter slideup">
+      <i class="fa fa-chain w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Add links to reference it</p>
+      <p> Add < script src="./scripts/script.js"></script> to the bottom of the page <br>
+        and < script src="https://unpkg.com/scrollreveal"></script> to the top of the page
+
+      </p>
+    </div>
+    <div class="w3-quarter slideup">
+      <i class="fa fa-exclamation-circle w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Note</p>
+      <p>I added a space before the script so that it would not be an actual script so make sure to delete it</p>
+    </div>
+    <div class="w3-quarter slideup">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Make use of classes</p>
+      <p>I have programmed three classes: slideup, slideleft and  slideright into the javascript, use them for the appropriate transition</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Example of sliding in and out transition -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h2 class="w3-center slideleft">More Information</h2>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large slideleft">
+      <img src="./images/Frame 67.png" class="w3-round w3-image " alt="data" width="500" height="333">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Might want to label this one</b></p><br>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large slideright">
+        <h3>Simply copy paste this</h3>
+      <p> And you would have a website xd.</p>
+      <a target="_blank" href="https://random.dog/">Maybe link this to another html page you created :D</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modify your own effects! -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h2 class="w3-center">Add the slideleft class to me!</h2>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="./images/Frame 66.png" class="w3-round w3-image " alt="data" width="500" height="333">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Add the slideleft class to me as well</b></p><br>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <h3>Pay attention to where componenets slide in from!</h3>
+      <p> In general, elements on the left should slide in from the left(slideleft class). <br><br> Elements on the right should come in from the right(slideright class)</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Table example -->
+<div class="w3-container w3-content w3-padding-64 slideup">
+  <h5 class="w3-center">The whole division slides up together</h5>
+  <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+    <tr>
+      <td>United States</td>
+      <td>65%</td>
+    </tr>
+    <tr>
+      <td>UK</td>
+      <td>15.7%</td>
+    </tr>
+    <tr>
+      <td>Russia</td>
+      <td>5.6%</td>
+    </tr>
+    <tr>
+      <td>Spain</td>
+      <td>2.1%</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>1.9%</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>1.5%</td>
+    </tr>
+  </table><br>
+</div>
+
+<!-- slideup effect on the entire division  -->
+<div class="w3-content w3-container w3-padding-64 slideup" style="border:5px solid red" id="bars">
+
+  <p class="w3-large w3-center w3-padding-16">Illustrated with a border</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Mission progress</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<!--Add your effects to the takeaway bar!-->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <!-- Add the slideup class to each of the elements below and achieve the effect -->
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">--</span><br>
+    If multiple elements
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">--</span><br>
+    with the same class
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">--</span><br>
+    appear at the same time
+  </div>
+  <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">--</span><br>
+    they go one by one
+  </div>
+</div>
+
+
+
+
+
+<!-- Active classes in css -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <!-- For this activity, the data is in demo.css, edit the properties of bgimg-2 and make this transition your own -->
+      <span class="w3-xxlarge w3-text-white w3-wide">Active classes in css </span>
+    </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64">
+    <h2 class="w3-center">Add active.css</h2>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large" style="height:fit-content; display:flex; align-items:center; justify-content:center">
+        <div class='mentorbox'>
+            <img class='mentorIcon' src="./images/REEEE.jpg">
+        </div>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <h3>Link to the css file</h3>
+      <p> Add the line: < link rel="stylesheet" href="./stylesheets/myown.css"> 
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container w3-content w3-padding-64">
+    <h5 class="w3-center">Additional Resources</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td>ScrollReveal</td>
+        <td><a href="https://codepen.io/hellogracecho/pen/qBBWprY">Link</a></td>
+      </tr>
+      <tr>
+        <td>Css hover effects</td>
+        <td><a href="https://css-tricks.com/css-link-hover-effects/">Link</a></td>
+      </tr>
+    </table><br>
+  </div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<!-- Unhide this! -->
+<script src="./scripts/script.js"></script>
+
+
+</body>
+</html>
